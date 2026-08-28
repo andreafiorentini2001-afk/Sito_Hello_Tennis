@@ -1,0 +1,346 @@
+body {
+  padding-top: 120px;
+  background-color: #F0F0F0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(0, 0, 0, 0.02) 10px,
+      rgba(0, 0, 0, 0.02) 20px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      rgba(0, 0, 0, 0.02) 10px,
+      rgba(0, 0, 0, 0.02) 20px
+    );
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  height: 150px;
+  width: 200px;
+}
+
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: rgba(255,255,255,1.0);
+  color: #2E86C1;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.banner span {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.language {
+  color: black;
+  border: 2px solid #2E86C1;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.banner a {
+  position: relative;
+  color: #2E86C1;
+  text-decoration: none;
+}
+
+.banner a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #2E86C1;  
+  transition: width .4s ease;
+}
+
+.banner a:hover::after {
+  width: 100%;
+}
+
+.banner a:visited {
+  color: #2E86C1;
+}
+
+.banner a:hover {
+  color: #2E86C1;
+}
+
+.sfondo {
+  background-image:
+    url("images/ChatGPT\ Image\ 21\ ago\ 2026\,\ 22_23_30.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.sfondo h1 {
+  color: white;
+  padding-top: 220px;
+  margin-left: 150px;
+  font-size: 60px;
+}
+
+h2 {
+  padding-top: 40px;
+  margin-left: 100px;
+}
+
+p, ul {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+ul {
+  padding-left: 20px;
+  line-height: 1.2;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.prenota-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  background-color: #2E86C1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+.prenota-btn:hover {
+  background-color: #1B4F72;
+  transform: scale(1.10);
+}
+
+.immaginisponsor {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.sponsoruno {
+  height: 147px;
+  width: 262px;
+}
+
+.sponsordue {
+  height: 66px;
+  width: 250px;
+}
+
+
+.immaginistaff {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.berry {
+  height: 469px;
+  width: 313px;
+  border-radius: 80px;
+}
+
+.struttureimmagini {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.struttureimmagini img {
+  height: 341px;
+  width: 512px;
+  max-width: calc(100% - 20px);
+  height: auto;
+}
+
+.fonasimmagini {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.fonasimmagini img {
+  height: 384px;
+  width: 688px;
+}
+
+.title {
+  padding-top: 40px;
+}
+
+#prenota {
+  padding-top: 60px;
+}
+
+#calendario {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+.calendario-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.calendario-header span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2E86C1;
+}
+
+.calendario-header button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  color: #2E86C1;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.calendario-header button:hover {
+  background-color: #eaf3fb;
+}
+
+.giorni-settimana {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+#giorni-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.giorno {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.giorno:hover {
+  background-color: #eaf3fb;
+  color: #2E86C1;
+}
+
+.giorno.vuoto {
+  cursor: default;
+  pointer-events: none;
+}
+
+.giorno.selezionato {
+  background-color: #2E86C1;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.socialimages {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  gap: 80px;
+}
+
+.socialimages img {
+  height: 180px;
+  width: 180px;
+}
+
+.socialimages img:hover {
+  transform: scale(1.08);
+  transition: transform 0.5s ease;
+}
+
+#social {
+  background-color: #2E86C1;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(0, 0, 0, 0.02) 10px,
+      rgba(0, 0, 0, 0.02) 20px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      rgba(0, 0, 0, 0.02) 10px,
+      rgba(0, 0, 0, 0.02) 20px
+    );
+  font-family: 'Inter', sans-serif;
+}
+
+.socialtitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.socialtitle h2 {
+  font-style: italic;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
