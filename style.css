@@ -86,7 +86,7 @@ img {
 
 .sfondo {
   background-image:
-    url("images/ChatGPT\ Image\ 21\ ago\ 2026\,\ 22_23_30.png");
+    url("C:\Users\Andrea\Desktop\Sito_Hello_Tennis\images\ChatGPT Image 30 ago 2026, 15_38_14.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -142,21 +142,6 @@ ul li {
 .prenota-btn:hover {
   background-color: #1B4F72;
   transform: scale(1.10);
-}
-
-@media (min-width:2000px) {
-  .prenota-btn {
-    padding: 20px 40px;
-    font-size: 1.5rem;
-  }
-  .banner {
-    gap: 80px;;
-    font-size: 1.5rem;
-  }
-  .language {
-    font-size: 1.5rem;
-    border: 3px solid #2E86C1;
-  }
 }
 
 .immaginisponsor {
@@ -359,4 +344,34 @@ ul li {
   color: white;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:2000px) {
+  .prenota-btn {
+    padding: 16px 32px;
+    font-size: 1.25rem;
+  }
+  .banner {
+    gap: 100px;;
+    font-size: 1.25rem;
+  }
+  .language {
+    font-size: 1.25rem;
+    border: 3px solid #2E86C1;
+  }
+  h2 {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  p, ul {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .sfondo{
+    height: 800px;
+  }
+  .sfondo h1 {
+    margin-left: 300px;
+    padding-top: 300px;
+  }
 }
