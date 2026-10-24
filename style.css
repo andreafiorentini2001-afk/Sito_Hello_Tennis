@@ -86,7 +86,7 @@ img {
 
 .sfondo {
   background-image:
-    url("C:\Users\Andrea\Desktop\Sito_Hello_Tennis\images\ChatGPT Image 30 ago 2026, 15_38_14.png");
+    url("./images/ChatGPT Image 21 ago 2026, 22_23_30.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,11 +168,56 @@ ul li {
   display: flex;
   justify-content: center;
   padding-top: 60px;
+  gap: 100px;
+}
+
+.staff-card {
+  position: relative;
+  margin: 0;
+  line-height: 0;
+}
+
+.staff-card img {
+  transition: transform 0.5s ease;
+}
+
+.staff-card:hover img {
+  transform: scale(1.10);
 }
 
 .berry {
-  height: 469px;
-  width: 313px;
+  height: 375.2px;
+  width: 250.4px;
+  border-radius: 80px;
+}
+
+.staff-label {
+  position: absolute;
+  right: 12px;
+  bottom: 16px;
+  left: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.staff-card:hover .staff-label,
+.staff-card:focus-within .staff-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.elio {
+  height: 375px;
+  width: 500px;
   border-radius: 80px;
 }
 
@@ -374,4 +419,33 @@ ul li {
     margin-left: 300px;
     padding-top: 300px;
   }
+}
+
+.location-map {
+  width: 580px;
+  height: 330px;
+  margin: 24px auto 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.location-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  margin-right: 10px;
+}
+
+.collab {
+ padding-top: 60px;
 }
